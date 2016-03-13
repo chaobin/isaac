@@ -27,7 +27,7 @@ class Regression(object):
     def predict(self, X):
         return np.dot(X, self.weights)
     
-    def cost(self, X, Y):
+    def costs(self, X, Y):
         '''
         Measuring the Mean Squared Error over the training set.
         '''
@@ -45,7 +45,7 @@ class Regression(object):
 class LogisticRegression(Regression):
     
     def predict(self, X):
-        return sigmoid(np.dot(X, self.weights))
+        return 1 / (1 + np.exp((- np.dot(X, self.weights))))
 
     def one_cost(self, x, y):
         prediction = self.predict(Xs)
@@ -54,14 +54,31 @@ class LogisticRegression(Regression):
             )
         return cost
 
-    def cost(self, X, Y):
-        '''
-        Measuring the Mean Squared Error over the training set.
-        '''
-        dot_products = np.dot(X, self.weights)
-        # squash using sigmoid
-        predictions = 1 / (1 + np.power(np.e, (- dot_products)))
+    def costs(self, X, Y):
+        predictions = self.predict(X)
+        # -log(self.predict(X) if Y == 1)
+        # -log(1 - self.predict(X) if Y == 0)
         return np.mean(
-            (- Y) * np.log(predictions) - (1 - Y) * (np.log(1 - predictions))
-        )
+            (- Y) * np.log(predictions) - (1 - Y) * (np.log(1 - predictions)))
+
+    def cost_derivative(self, X, Y):
+        costs = (self.predict(X) - Y)
+        derivatives = np.mean(X.T * costs, axis=1)
+        return derivatives
+
+    # TODO I suspect this implementation here below
+    # is not a clever one.
+    def accuracy(self, X, Y):
+        '''
+        return
+            float, percentage of accuracy
+        '''
+        total = len(Y)
+        predictions = self.predict(X)
+        # step the values
+        predictions[predictions > 0.5] = 1
+        predictions[predictions < 0.5] = 0
+        # stats the accuracy
+        validations = (predictions == Y)
+        return validations.mean()
 
