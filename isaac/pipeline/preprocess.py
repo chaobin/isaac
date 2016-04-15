@@ -40,3 +40,41 @@ def get_XY_from_frame(arr, columns, outcome=-1,
     if add_bias:
         X = np.hstack((np.ones((len(Y), 1)), X)) # adding one bias column
     return (X, Y)
+
+def load_training_mnist(path_mnist):
+    from mnist import MNIST
+    mnist = MNIST(path_mnist)
+    images, labels = mnist.load_training()
+    return (images, labels)
+
+def load_testing_mnist(path_mnist):
+    from mnist import MNIST
+    mnist = MNIST(path_mnist)
+    images, labels = mnist.load_testing()
+    return (images, labels)
+
+def training_mnist_preprocessed(path_mnist):
+    images, labels = load_training_mnist(path_mnist)
+    Xs = np.array(images, dtype='float64')
+    scaling = 1/255
+    Xs *= scaling
+    Ys = np.zeros((len(labels), 10), dtype='uint8')
+    Ys[range(len(labels)),labels] = 1
+    return (Xs, Ys)
+
+def testing_mnist_preprocessed(path_mnist):
+    images, labels = load_testing_mnist(path_mnist)
+    return (Xs, Ys)
+
+def n_2_bitmap(n):
+    '''
+    Represents a label in MNIST dataset with
+    a bitmap. e.g., 5 -> [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+    return
+        np.array
+    '''
+    bits = np.zeros(10)
+    if n != 0:
+        bits[n] = 1
+    return bits
