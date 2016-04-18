@@ -47,7 +47,7 @@ class Network(object):
     def activation_sigmoid(self, product):
         return 1 / (1 + np.exp(-(product)))
 
-    def derivative_sigmoid(self, product):
+    def derivative_activation_sigmoid(self, product):
         z = self.activation_sigmoid(product)
         return z * (1 - z)
 
@@ -57,26 +57,35 @@ class Network(object):
         return activation
 
     def activation_derivative(self, product, method='sigmoid'):
-        derivative = 'derivative_' + method
+        derivative = 'derivative_activation_' + method
         derivative = getattr(self, derivative)(product)
         return derivative
 
     def SGD(self, Xs, Ys, learning_rate, batch_size, epoch):
+        size_training_set = len(Ys)
         for e in range(epoch):
             batches = [
                 (Xs[n:n+batch_size], Ys[n:n+batch_size])
-                for n in range(0, len(Ys), batch_size)]
+                for n in range(0, size_training_set, batch_size)]
             for (X, Y) in batches:
-                self.train_with_n_examples(X, Y, learning_rate)
+                # initialize the accumulator
+                n_weights = []
+                n_biases = []
+                for i in range(self.num_layer - 1):
+                    n_weights.append(np.zeros_like(self.weights[i]))
+                    n_biases.append(np.zeros_like(self.biases[i]))
+                # start training with the batch
+                for (x, y) in zip(X, Y):
+                    d_weights, d_biases = self.backward(x, y)
+                    for i in range(self.num_layer - 1):
+                        n_weights[i] = n_weights[i] + d_weights[i]
+                        n_biases[i] = n_biases[i] + d_biases[i]
+                # average the accumulated gradient
+                for i in range(self.num_layer - 1):
+                    n_weights[i] = learning_rate * (n_weights[i] / len(Y))
+                    n_biases[i] = learning_rate * (n_biases[i] / len(Y))
+                self.update_weights(n_weights, n_biases)
             print("Epoch {0} completed.".format(e))
-
-    # TODO full vectorization
-    def train_with_n_examples(self, Xs, Ys, learning_rate):
-        for (x, y) in zip(Xs, Ys):
-            g_weights, g_biases = self.backward(x, y)
-            # g_weights *= learning_rate
-            # g_biases *= learning_rate
-            self.update_weights(g_weights, g_biases)
 
     def forward(self, X):
         '''

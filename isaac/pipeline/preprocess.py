@@ -53,8 +53,7 @@ def load_testing_mnist(path_mnist):
     images, labels = mnist.load_testing()
     return (images, labels)
 
-def training_mnist_preprocessed(path_mnist):
-    images, labels = load_training_mnist(path_mnist)
+def preprocess_mnist(images, labels):
     Xs = np.array(images, dtype='float64')
     scaling = 1/255
     Xs *= scaling
@@ -62,9 +61,13 @@ def training_mnist_preprocessed(path_mnist):
     Ys[range(len(labels)),labels] = 1
     return (Xs, Ys)
 
+def training_mnist_preprocessed(path_mnist):
+    images, labels = load_training_mnist(path_mnist)
+    return preprocess_mnist(images, labels)
+
 def testing_mnist_preprocessed(path_mnist):
     images, labels = load_testing_mnist(path_mnist)
-    return (Xs, Ys)
+    return preprocess_mnist(images, labels)
 
 def n_2_bitmap(n):
     '''
