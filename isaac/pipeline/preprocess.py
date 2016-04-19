@@ -55,7 +55,7 @@ def load_testing_mnist(path_mnist):
 
 def preprocess_mnist(images, labels):
     Xs = np.array(images, dtype='float64')
-    scaling = 1/255
+    scaling = 1/255 # so that color intensities range from 0 to 1
     Xs *= scaling
     Ys = np.zeros((len(labels), 10), dtype='uint8')
     Ys[range(len(labels)),labels] = 1
