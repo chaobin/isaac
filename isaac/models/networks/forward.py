@@ -1,5 +1,6 @@
 import numpy as np
 
+from isaac.models.networks import activations
 
 __all__ = [
     "Network"
@@ -8,16 +9,18 @@ __all__ = [
 
 class Network(object):
 
-    def __init__(self, layering, activation='sigmoid'):
+    def __init__(self, layering, activation=activations.Sigmoidal):
         self.layering = layering
         self.k = layering[-1] # num of classes
-        self.setup(self.layering)
+        self.init_weights(self.layering)
+        self.activation = activation
 
-    def setup(self, layering):
-        '''
-        layering
-            list, number of features in each dimension
-            e.g., (64 * 64, 64 * 64, 10)
+    def reset(self):
+        self.init_weights(self.layering)
+
+    def init_weights(self, layering):
+        '''Init weight in each layer.
+        
         '''
         self.num_layer = len(layering)
         self.weights = []
@@ -29,11 +32,20 @@ class Network(object):
             self.biases.append(bias)
 
     def init_weight(self, rows, columns):
-        '''
-        return
-            np.ndarray, a [rows] * [columns] matrice
-            representing the mapping from one layer
-            to the next
+        '''Initialize the weights and biases for one layer.
+
+        Parameters
+        ----------
+
+        rows, columns : int
+            rows is number of neuron in the next layer,
+            columns is the number of output neuron
+
+        Returns
+        -------
+        np.ndarray
+            A [rows] * [columns] matrice representing
+            the mapping from one layer to the next.
         '''
         return np.random.randn(rows, columns)
 
@@ -45,52 +57,50 @@ class Network(object):
         '''
         return np.random.randn(n)
 
-    def activation_sigmoid(self, product):
-        return 1 / (1 + np.exp(-(product)))
+    def activate(self, z):
+        a = self.activation.activate(z)
+        return a
 
-    def derivative_activation_sigmoid(self, product):
-        z = self.activation_sigmoid(product)
-        return z * (1 - z)
+    def activation_derivative(self, z):
+        dz = self.activation.derivative(z)
+        return dz
 
-    def activate(self, product, method='sigmoid'):
-        activation = 'activation_' + method
-        activation = getattr(self, activation)(product)
-        return activation
-
-    def activation_derivative(self, product, method='sigmoid'):
-        derivative = 'derivative_activation_' + method
-        derivative = getattr(self, derivative)(product)
-        return derivative
-
-    def SGD(self, Xs, Ys, lrate, batch_size, epoch):
-        size_training_set = len(Ys)
+    def SGD(self, X, Y, lrate, batch_size, epoch):
+        size_training_set = len(Y)
         for e in range(epoch):
             batches = [
-                (Xs[n:n+batch_size], Ys[n:n+batch_size])
+                (X[n:n+batch_size], Y[n:n+batch_size])
                 for n in range(0, size_training_set, batch_size)]
-            for (X, Y) in batches:
+            for (x, y) in batches:
                 # start training with the batch
-                Z, A = self.forward(X)
-                d_W, d_B = self.backward(Z, A, Y)
+                z, a = self.forward(x)
+                d_w, d_b = self.backward(z, a, y)
                 # average the accumulated gradient
                 for i in range(self.num_layer - 1):
-                    d_W[i] = lrate * (d_W[i] / len(Y))
-                    d_B[i] = lrate * (d_B[i] / len(Y))
-                self.update_weights(d_W, d_B)
+                    d_w[i] = lrate * (d_w[i] / len(y))
+                    d_b[i] = lrate * (d_b[i] / len(y))
+                self.update_weights(d_w, d_b)
             print("Epoch {0} completed.".format(e))
 
-    def forward(self, X):
-        '''
-        X
-            np.array, the preprocessed input. Preprocess may include
+    def forward(self, x):
+        '''Calculate the linear combinations and apply activation.
+
+        Parameters
+        ----------
+
+        x : np.array
+            The preprocessed input. Preprocess may include
             scaling so that the calculations later on it won't overflow.
 
-        return
-            list, activations of each neuron
+        Returns
+        -------
+        tuple
+            (z, a), where z is the linear combinations in each layer,
+            and a is the activation using self.activation.
         '''
-        X = np.atleast_2d(X)
+        x = np.atleast_2d(x)
         products = []
-        activations = [X]
+        activations = [x]
         for i in range(self.num_layer-1):
             current_activation = activations[i]
             # HINT (VECTORIZATION) np.dot(A, w.T) == np.dot(w, A.T).T
@@ -103,16 +113,15 @@ class Network(object):
         # HINT (products[-1].shape == activations[-l].shape == (len(X), self.k))
         return (products, activations)
 
-    def backward(self, Z, A, Y):
+    def backward(self, z, a, y):
         gradient_weights = [None] * (len(self.weights))
         gradient_biases = [None] * (len(self.biases))
         # 1. Compute the delta of error with respect to the
         #    the output of the final layer
-        cost_derivative = self.cost_derivative(A[-1], Y)
-        delta = cost_derivative * self.activation_derivative(Z[-1])
+        delta = self.cost_derivative(a[-1], y)
         # HINT delta.shape == (len(X), self.k)
         # compute gradient in curent layer using delta
-        gradient_weights[-1] = np.dot(delta.T, A[-1-1])
+        gradient_weights[-1] = np.dot(delta.T, a[-1-1])
         gradient_biases[-1] = delta.sum(0)
         # 2. Back-propagate the error
         for l in range(2, self.num_layer): # reversed
@@ -131,18 +140,18 @@ class Network(object):
             #       np.dot(w.T, delta[0]) when taking on one example
             #       np.dot(delta, w) when taking on a set of examples
             delta = np.dot(
-                delta, self.weights[-l+1]) * self.activation_derivative(Z[-l])
+                delta, self.weights[-l+1]) * self.activation_derivative(z[-l])
             # compute the gradient in current layer using delta
             # HINT (VECTORIZATION)
             #
             # for i in range(num_of_batch):
-            #   d_weights += np.outer(A[-l-1][i], delta[i])
+            #   d_weights += np.outer(a[-l-1][i], delta[i])
             #   d_biases += delta[i]
             # =>
             # np.dot(A[-l-1].T, delta).T
             # =>
-            # np.dot(delta.T, A[-l-1])
-            gradient_weights[-l] = np.dot(delta.T, A[-l-1])
+            # np.dot(delta.T, a[-l-1])
+            gradient_weights[-l] = np.dot(delta.T, a[-l-1])
             gradient_biases[-l] = delta.sum(0)
 
         return (gradient_weights, gradient_biases)
@@ -152,28 +161,36 @@ class Network(object):
             self.weights[i] = self.weights[i] - weights[i]
             self.biases[i] = self.biases[i] - biases[i]
 
-    def cost(self, X, Y):
-        _, A = self.forward(X)
-        H = A[-1]
+    def cost(self, x, y):
+        _, a = self.forward(x)
+        h = a[-1]
         cost = np.mean(
             # HINT mean(sum_example(sum_of_class(example)))
-            (Y * np.log(H) + (1 - Y) * (np.log(1 - H))).sum(1)
+            (y * np.log(h) + (1 - y) * (np.log(1 - h))).sum(1)
         )
         return -cost
 
-    def cost_derivative(self, output, Y):
+    def cost_derivative(self, output, y):
+        '''Return the delta of the final layer.
+
+        The cost delta with respect to the output
+        of the final layer. Here the cost is defined
+        using the negative log likelihood or cross entropy.
+        The larger the difference between estimation and
+        sample is, the larger the error is fedback to network.
         '''
-        The cost derivative with respect to the output
-        in the final layer.
-        '''
-        return (output - Y)
+        return (output - y)
 
-    def predict(self, X):
-        _, A = self.forward(np.atleast_2d(X))
-        return np.argmax(A[-1], axis=1)
+    def predict(self, x):
+        _, a = self.forward(np.atleast_2d(x))
+        return np.argmax(a[-1], axis=1)
 
-    def accuracy(self, X, Y):
-        predictions = self.predict(X)
-        return (predictions == np.argmax(Y, axis=1)).mean()
+    def accuracy(self, x, y):
+        predictions = self.predict(x)
+        return (predictions == np.argmax(y, axis=1)).mean()
 
+    def mistakes(self, x, y):
+        predictions = self.predict(x)
+        mistakes = (predictions == np.argmax(y, axis=1))
+        return np.nonzero(mistakes==False)[0]
 

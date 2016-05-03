@@ -1,7 +1,12 @@
 from contextlib import contextmanager
 
+import six
+import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
+from matplotlib import (
+    rcParams,
+    colors
+)
 from mpl_toolkits.mplot3d import Axes3D
 
 
@@ -9,13 +14,83 @@ __all__ = [
     "zoom_plot",
     "plot",
     "plot_predictions_3d",
+    'Palette'
 ]
+
+
+def sorted_color_maps():
+    '''List of color name and their hex values sorted by HSV.
+
+    This code is taken from:
+        http://matplotlib.org/examples/color/named_colors.html
+    '''
+    colors_ = list(six.iteritems(colors.cnames))
+
+    # Add the single letter colors.
+    for name, rgb in six.iteritems(colors.ColorConverter.colors):
+        hex_ = colors.rgb2hex(rgb)
+        colors_.append((name, hex_))
+
+    # Transform to hex color values.
+    hex_ = [color[1] for color in colors_]
+    # Get the rgb equivalent.
+    rgb = [colors.hex2color(color) for color in hex_]
+    # Get the hsv equivalent.
+    hsv = [colors.rgb_to_hsv(color) for color in rgb]
+
+    # Split the hsv values to sort.
+    hue = [color[0] for color in hsv]
+    sat = [color[1] for color in hsv]
+    val = [color[2] for color in hsv]
+
+    # Sort by hue, saturation and value.
+    ind = np.lexsort((val, sat, hue))
+    sorted_colors = [colors_[i] for i in ind]
+    sorted_colors = [
+        c_1
+        for (c_1, c_2) in zip(sorted_colors[:-1], sorted_colors[1:])
+        if c_1[1] != c_2[1]]
+    return sorted_colors
+
+class Palette(object):
+
+    SORTED_COLORS = sorted_color_maps()
+    GROUPS = (
+        #(color_name in SORTED_COLORS, group_name)
+        ('k', 'GRAY'),
+        ('whitesmoke', 'WHITE'),
+        ('rosybrown', 'BROWN'),
+        ('firebrick', 'RED'),
+        ('sienna', 'SIENNA'),
+        ('antiquewhite', 'WHITE'),
+        ('orange', 'ORANGE'),
+        ('y', 'GREEN'),
+        ('mediumaquamarine', 'BLUE'),
+        ('mediumpurple', 'PURPLE')
+    )
+
+    def __init__(self):
+        self.make_palette()
+
+    def make_palette(self):
+        group_names = dict(self.GROUPS)
+        [setattr(self, grp, []) for (cname, grp) in self.GROUPS]
+        current_group = None
+        for (cname, ccode) in self.SORTED_COLORS:
+            group_name = group_names.get(cname)
+            if not (group_name is None):
+                current_group = getattr(self, group_name, current_group)
+                if current_group is None:
+                    continue
+            current_group.append(cname)
+
+Palette = Palette()
 
 
 @contextmanager
 def zoom_plot(w, h):
-    '''
-    Temprarily change the plot size.
+    '''Temprarily change the plot size.
+
     '''
     shape = rcParams['figure.figsize']
     rcParams['figure.figsize'] = w, h
@@ -90,3 +165,4 @@ def plot_predictions_3d(X, Y, predictions, labels,
     plt.title(title)
     plt.legend()
     plt.show()
+

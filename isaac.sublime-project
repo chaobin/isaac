@@ -1,0 +1,20 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "python_interpreter": "/Users/cbt/anaconda/envs/ml/bin/python",
+        "python_package_paths": [
+            "/Users/cbt/Projects/isaac",
+            "/Users/cbt/anaconda/envs/ml/lib/python35.zip",
+            "/Users/cbt/anaconda/envs/ml/lib/python3.5",
+            "/Users/cbt/anaconda/envs/ml/lib/python3.5/plat-darwin",
+            "/Users/cbt/anaconda/envs/ml/lib/python3.5/lib-dynload",
+            "/Users/cbt/anaconda/envs/ml/lib/python3.5/site-packages",
+            "/Users/cbt/anaconda/envs/ml/lib/python3.5/site-packages/setuptools-20.7.0-py3.5.egg"
+            ]
+    }
+}

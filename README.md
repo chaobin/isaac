@@ -6,14 +6,15 @@ This is the Python files I put together during writing up a series of [blogs](ht
 - numpy
 - pandas (optional)
 - matplotlib
+- scipy
 
 # examples
 
 ```python
 
->>> from isaac.models.linear import Regression
+>>> from isaac.models.regressions import LinearRegression
 >>> from isaac.optimizers.gradient import Descent
->>> model = Regression.from_dimension(10)
+>>> model = LinearRegression.from_dimension(10)
 ...
 >>> X, Y = get_XY_from_frame(...)
 >>> descent = Descent(model, X, Y, 0.001)

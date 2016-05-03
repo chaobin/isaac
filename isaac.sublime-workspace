@@ -1,0 +1,757 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"acti",
+				"activations"
+			],
+			[
+				"predi",
+				"predictions"
+			],
+			[
+				"n_",
+				"n_biases"
+			],
+			[
+				"num",
+				"num_layer-1"
+			],
+			[
+				"num_",
+				"num_layer-1"
+			],
+			[
+				"ba",
+				"biases"
+			],
+			[
+				"for",
+				"forward"
+			],
+			[
+				"load_tes",
+				"load_testing_mnist"
+			],
+			[
+				"g_",
+				"g_weights"
+			],
+			[
+				"nu",
+				"num_layer"
+			],
+			[
+				"gra",
+				"gradient_biases"
+			],
+			[
+				"gradie",
+				"gradient_biases"
+			],
+			[
+				"gradi",
+				"gradient_weights"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"deri",
+				"derivative"
+			],
+			[
+				"activ",
+				"activation_derivative"
+			],
+			[
+				"pred",
+				"predict"
+			],
+			[
+				"ax",
+				"axes"
+			],
+			[
+				"plot",
+				"plotter_kwargs"
+			],
+			[
+				"a",
+				"axes"
+			],
+			[
+				"sha",
+				"sharey"
+			],
+			[
+				"shar",
+				"sharex"
+			],
+			[
+				"labe",
+				"label_xy"
+			],
+			[
+				"normali",
+				"normalizer"
+			],
+			[
+				"norma",
+				"normalize"
+			],
+			[
+				"sto",
+				"stop_and_do"
+			],
+			[
+				"stop",
+				"stopped"
+			],
+			[
+				"ob",
+				"obstacle_detected"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"moto",
+				"motor_a"
+			],
+			[
+				"mo",
+				"motors"
+			],
+			[
+				"motor_",
+				"motor_b"
+			],
+			[
+				"remove",
+				"remove_child"
+			],
+			[
+				"inse",
+				"insertBefore"
+			],
+			[
+				"ite",
+				"iterables"
+			],
+			[
+				"Emp",
+				"ListEmpty"
+			],
+			[
+				"State",
+				"StateError"
+			],
+			[
+				"n",
+				"n_lp"
+			],
+			[
+				"bad",
+				"bad_syntax"
+			],
+			[
+				"c",
+				"claim"
+			],
+			[
+				"in_",
+				"in_state_l_parenthesis"
+			],
+			[
+				"is",
+				"is_empty"
+			],
+			[
+				"token",
+				"tokenize"
+			],
+			[
+				"in",
+				"in_state_digit"
+			],
+			[
+				"read",
+				"read_file"
+			],
+			[
+				"asy",
+				"asyncbuffer"
+			],
+			[
+				"stas",
+				"stats_benchmarks"
+			],
+			[
+				"send",
+				"send_one_message"
+			],
+			[
+				"A",
+				"ARGS_CLIENT"
+			],
+			[
+				"parse_",
+				"parse_args"
+			],
+			[
+				"ARG",
+				"ARGS_SERVER"
+			],
+			[
+				"US",
+				"USAGE_SERVER"
+			],
+			[
+				"USA",
+				"USAGE_CLIENT"
+			],
+			[
+				"pro",
+				"protocol_handler"
+			],
+			[
+				"en",
+				"encoder"
+			],
+			[
+				"enco",
+				"encoder"
+			],
+			[
+				"end",
+				"end_point_B"
+			],
+			[
+				"End",
+				"end_point_B"
+			],
+			[
+				"rec",
+				"recv_one_message"
+			],
+			[
+				"recv",
+				"recv_one_message"
+			],
+			[
+				"sock",
+				"sock_client"
+			],
+			[
+				"STA",
+				"static"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"Page",
+				"PageView"
+			],
+			[
+				"date",
+				"date_created"
+			],
+			[
+				"class",
+				"classmethod"
+			],
+			[
+				"make",
+				"make_tracking_id"
+			],
+			[
+				"track",
+				"tracking_id"
+			],
+			[
+				"Cus",
+				"CustomerProfile"
+			],
+			[
+				"Order",
+				"OrderAdmin"
+			],
+			[
+				"auto",
+				"auto_now_add"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"url_",
+				"url_for"
+			],
+			[
+				"Pas",
+				"PastaAdmin"
+			],
+			[
+				"name",
+				"name_uwsgi_conf"
+			],
+			[
+				"UWS",
+				"UWSGI_EMPEROR_DIR"
+			],
+			[
+				"UW",
+				"UWSGI_EMPEROR_DIR"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "isaac/models/kmeans.py",
+			"settings":
+			{
+				"buffer_size": 1464,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ipython",
+				"Open IPython Notebook"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"cython",
+				"Set Syntax: Cython"
+			],
+			[
+				"proto",
+				"Set Syntax: Protocol Buffer"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"save ",
+				"Project: Save As"
+			],
+			[
+				"python",
+				"Set Syntax: Python3"
+			],
+			[
+				"console",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"jinja",
+				"Set Syntax: HTML (Jinja Templates)"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"select",
+				"Bookmarks: Select Next"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 414.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/cbt/Projects/isaac",
+		"/Users/cbt/Projects/isaac/examples",
+		"/Users/cbt/Projects/isaac/isaac",
+		"/Users/cbt/Projects/isaac/isaac/models"
+	],
+	"file_history":
+	[
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
+		"/Users/cbt/Projects/isaac/isaac/models/networks/forward.py",
+		"/Users/cbt/Projects/isaac/isaac/optimizers/gradient.py",
+		"/Users/cbt/Projects/isaac/isaac/optimizers/backpropagation.py",
+		"/Users/cbt/Projects/isaac/isaac/models/knn.py",
+		"/Users/cbt/Projects/isaac/isaac/models/regressions.py",
+		"/Users/cbt/Projects/isaac/isaac/models/networks/activations.py",
+		"/Users/cbt/Projects/isaac/isaac/models/linear.py",
+		"/Users/cbt/Projects/isaac/isaac/stats/__init__.py",
+		"/Users/cbt/Projects/isaac/isaac/pipeline/preprocess.py",
+		"/Users/cbt/Projects/isaac/isaac/plots/basic.py",
+		"/Users/cbt/Projects/isaac/isaac/pipeline/normalizer.py",
+		"/Users/cbt/Projects/isaac/isaac/utils/debug.py",
+		"/Users/cbt/Projects/isaac/.development/mnist_net.history",
+		"/Users/cbt/Projects/isaac/.gitignore",
+		"/Users/cbt/Projects/isaac/.development/network.py",
+		"/Users/cbt/Projects/isaac/.development/back_propagate_error.history",
+		"/Users/cbt/Projects/isaac/examples/digits.py",
+		"/Users/cbt/Projects/isaac/isaac/models/__init__.py",
+		"/Users/cbt/Projects/isaac/setup.py",
+		"/Users/cbt/Projects/isaac/requirements.txt",
+		"/Users/cbt/Projects/isaac/LICENSE",
+		"/Users/cbt/Projects/isaac/isaac/models/networks/__init__.py",
+		"/Users/cbt/Projects/isaac/isaac/models/networks.py",
+		"/Users/cbt/Projects/isaac/isaac/pipeline/__init__.py",
+		"/Users/cbt/Projects/isaac/isaac/plots/__init__.py",
+		"/Users/cbt/Projects/isaac/isaac/optimizers/__init__.py",
+		"/Users/cbt/Projects/ev3/control/base.py",
+		"/Users/cbt/Projects/ev3/control/car.py",
+		"/Users/cbt/Projects/ev3/control/status.py",
+		"/Users/cbt/Projects/ev3/control/status_check.py",
+		"/Users/cbt/Projects/ev3/control/__init__.py",
+		"/Users/cbt/Projects/ev3/dodger/auto_drive.py",
+		"/Users/cbt/Projects/xb360controller/xbcontroller/360.py",
+		"/Users/cbt/Projects/self.edu/data_structure_and_algorithms/calculator.py",
+		"/Users/cbt/Projects/self.edu/data_structure_and_algorithms/linkedlist.py",
+		"/Users/cbt/Projects/self.edu/data_structure_and_algorithms/trees.py",
+		"/Users/cbt/Projects/self.edu/data_structure_and_algorithms/stack.py",
+		"/Users/cbt/Projects/self.edu/data_structure_and_algorithms/tokenizer.py",
+		"/Users/cbt/Projects/self.edu/python/file_in_python3.py",
+		"/Users/cbt/Projects/self.edu/python/rich_comparison.py",
+		"/Users/cbt/Documents/work/writings/python_c_c++_interop_research.md",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/varint.pyx",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/server.py",
+		"/Users/cbt/Projects/python/asyncbuffer/tests/test_protocol.py",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/cli.py",
+		"/Users/cbt/Projects/python/asyncbuffer/examples/client.py",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/settings.py",
+		"/Users/cbt/Projects/python/asyncbuffer/examples/server.py",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/pyvarint.py",
+		"/Users/cbt/Projects/python/asyncbuffer/tests/test_varint.py",
+		"/Users/cbt/Projects/python/asyncbuffer/tests/test_jsonencoder.py",
+		"/Users/cbt/Projects/python/asyncbuffer/setup.py",
+		"/Users/cbt/Projects/python/asyncbuffer/asyncbuffer/protocol.py",
+		"/Users/cbt/Projects/python/asyncbuffer/server.py",
+		"/Users/cbt/Projects/python/asyncbuffer/protocol.py",
+		"/Users/cbt/Projects/python/asyncbuffer/encoders/jsonencoder.py",
+		"/Users/cbt/Projects/python/asyncbuffer/encoders/base.py",
+		"/Users/cbt/Projects/python/benchmark_json_vs_gpb/benchmark.py",
+		"/Users/cbt/Projects/python/benchmark_json_vs_gpb/bench_mark.py",
+		"/Users/cbt/Projects/gevent-protobuf/msg.proto",
+		"/Users/cbt/Projects/self.edu/network/chat_server.py",
+		"/Users/cbt/Projects/self.edu/network/chat_client.py",
+		"/Users/cbt/Projects/self.edu/mobile/AwesomeProject/index.ios.js",
+		"/Users/cbt/Projects/self.edu/network/echo_server.py",
+		"/Users/cbt/.allconfs/sys/mac.pac",
+		"/Users/cbt/Downloads/mac.pac",
+		"/Users/cbt/Projects/repos/dnslib/dnslib/intercept.py",
+		"/Users/cbt/Projects/repos/dnslib/README",
+		"/Users/cbt/Projects/repos/dnslib/dnslib/proxy.py",
+		"/Users/cbt/Projects/repos/dnslib/dnslib/zoneresolver.py",
+		"/Users/cbt/Projects/repos/dnslib/mydns.py",
+		"/Users/cbt/Projects/repos/dnslib/dnslib/server.py",
+		"/Users/cbt/Projects/limousine/README.md",
+		"/Users/cbt/Projects/limousine/wsgi/static/README",
+		"/Users/cbt/Projects/limousine/chamonix/templates/index.html",
+		"/Users/cbt/Projects/limousine/chamonix/app.py",
+		"/Users/cbt/Projects/limousine/chamonix/config.py",
+		"/Users/cbt/Projects/limousine/chamonix/templates/layout.html",
+		"/Users/cbt/Projects/limousine/chamonix/templates/booking.html",
+		"/Users/cbt/Projects/limousine/wsgi/application",
+		"/Users/cbt/Projects/limousine/chamonix/manage.py",
+		"/Users/cbt/Projects/limousine/chamonix/conf/chamonix.py",
+		"/Users/cbt/Projects/limousine/chamonix/view.py",
+		"/Users/cbt/Projects/limousine/chamonix/db.sql",
+		"/Users/cbt/Projects/limousine/chamonix/db.py",
+		"/Users/cbt/Projects/limousine/chamonix/templates/notfound.html",
+		"/Users/cbt/Projects/limousine/setup.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/settings/base.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/menu/admin.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/page/admin.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/base/models.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/page/models.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/base/admin.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/admin.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/settings/production.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/templates/base.html",
+		"/Users/cbt/Projects/planetchx3/requirements.txt",
+		"/Users/cbt/Projects/st_projects/planetchx.sublime-project",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/base/tests.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/deploy/post-receive.sh",
+		"/Users/cbt/Projects/planetchx3/planetchx/deploy/uwsgi_planetchx.ini",
+		"/Users/cbt/Projects/planetchx3/setup.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/templates/home.html",
+		"/Users/cbt/Projects/planetchx3/planetchx/static/css/planetchx.css",
+		"/Users/cbt/Projects/planetchx3/planetchx/templates/admin/base_site.html",
+		"/Users/cbt/Projects/planetchx3/planetchx/wsgi.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/deploy/nginx_planetchx.conf",
+		"/Users/cbt/Projects/planetchx3/planetchx/settings/dev.py",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/cbt/Projects/planetchx3/planetchx/static/js/planetchx.js",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/menu/views.py",
+		"/Users/cbt/Projects/planetchx3/templates/home.html",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/menu/urls.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/urls.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/page/views.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/page/urls.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/page/tests.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/menu/models.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/models.py",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/cbt/Projects/planetchx3/deploy/uwsgi_planetchx.ini",
+		"/Users/cbt/Projects/planetchx3/planetchx/settings/__init__.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/migrations/__init__.py",
+		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/views.py"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 114.0,
+		"where_history":
+		[
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"64",
+			"motor_b",
+			"self.add_token",
+			"self._head",
+			"self.head",
+			"print",
+			"get_state",
+			"self.tokens",
+			"server",
+			"naval_fate",
+			"neval_fate",
+			"print",
+			"self.unpack",
+			"print",
+			"encode",
+			"decode",
+			"/static/",
+			"bjtkd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sock",
+			"cli",
+			"pack",
+			"encode",
+			"unpack",
+			"$(STATIC_URL)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "isaac/models/kmeans.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1464,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1365,
+								1365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 609.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Markdown Preview/Markdown.sublime-build",
+	"project": "isaac.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Projects/st_projects/bjtkd.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
