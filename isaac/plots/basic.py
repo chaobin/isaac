@@ -1,3 +1,4 @@
+import random
 from contextlib import contextmanager
 
 import six
@@ -14,7 +15,8 @@ __all__ = [
     "zoom_plot",
     "plot",
     "plot_predictions_3d",
-    'Palette'
+    'Palette',
+    'plot_clusters',
 ]
 
 
@@ -166,3 +168,12 @@ def plot_predictions_3d(X, Y, predictions, labels,
     plt.legend()
     plt.show()
 
+def plot_clusters(x, y, k, palette=Palette.GREEN):
+    colors = random.sample(palette, k)
+    for i in range(k):
+        x_i = x[np.nonzero(y==i)]
+        plt.scatter(
+            x_i[:, 0], x_i[:, 1],
+            marker='o', facecolors='none', edgecolors=colors[i])
+    plt.grid(True)
+    plt.show()

@@ -1,0 +1,442 @@
+<table align="CENTER">
+<tbody><tr><th>Name</th><th><a href="#h:uses">Used By</a></th><th>Type</th><th align="CENTER">Default</th><th>Minimum</th><th>Notes</th></tr>
+ <tr><td><a name="a:Damping" href="#d:Damping">Damping</a>
+</td><td>G</td><td>double</td><td align="CENTER">0.99</td><td>0.0</td><td>neato only</td> </tr>
+ <tr><td><a name="a:K" href="#d:K">K</a>
+</td><td>GC</td><td>double</td><td align="CENTER">0.3</td><td>0</td><td>sfdp, fdp only</td> </tr>
+ <tr><td><a name="a:URL" href="#d:URL">URL</a>
+</td><td>ENGC</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, postscript, map only</td> </tr>
+ <tr><td><a name="a:_background" href="#d:_background">_background</a>
+</td><td>G</td><td>string</td><td align="CENTER">&lt;none&gt;</td><td></td><td></td> </tr>
+ <tr><td><a name="a:area" href="#d:area">area</a>
+</td><td>NC</td><td>double</td><td align="CENTER">1.0</td><td>&gt;0</td><td>patchwork only</td> </tr>
+ <tr><td><a name="a:arrowhead" href="#d:arrowhead">arrowhead</a>
+</td><td>E</td><td><a href="#k:arrowType">arrowType</a>
+</td><td align="CENTER">normal</td><td></td><td></td> </tr>
+ <tr><td><a name="a:arrowsize" href="#d:arrowsize">arrowsize</a>
+</td><td>E</td><td>double</td><td align="CENTER">1.0</td><td>0.0</td><td></td> </tr>
+ <tr><td><a name="a:arrowtail" href="#d:arrowtail">arrowtail</a>
+</td><td>E</td><td><a href="#k:arrowType">arrowType</a>
+</td><td align="CENTER">normal</td><td></td><td></td> </tr>
+ <tr><td><a name="a:bb" href="#d:bb">bb</a>
+</td><td>G</td><td><a href="#k:rect">rect</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:bgcolor" href="#d:bgcolor">bgcolor</a>
+</td><td>GC</td><td><a href="#k:color">color</a>
+<br><a href="#k:colorList">colorList</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td></td> </tr>
+ <tr><td><a name="a:center" href="#d:center">center</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:charset" href="#d:charset">charset</a>
+</td><td>G</td><td>string</td><td align="CENTER">"UTF-8"</td><td></td><td></td> </tr>
+ <tr><td><a name="a:clusterrank" href="#d:clusterrank">clusterrank</a>
+</td><td>G</td><td><a href="#k:clusterMode">clusterMode</a>
+</td><td align="CENTER">local</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:color" href="#d:color">color</a>
+</td><td>ENC</td><td><a href="#k:color">color</a>
+<br><a href="#k:colorList">colorList</a>
+</td><td align="CENTER">black</td><td></td><td></td> </tr>
+ <tr><td><a name="a:colorscheme" href="#d:colorscheme">colorscheme</a>
+</td><td>ENCG</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:comment" href="#d:comment">comment</a>
+</td><td>ENG</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:compound" href="#d:compound">compound</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:concentrate" href="#d:concentrate">concentrate</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:constraint" href="#d:constraint">constraint</a>
+</td><td>E</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:decorate" href="#d:decorate">decorate</a>
+</td><td>E</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:defaultdist" href="#d:defaultdist">defaultdist</a>
+</td><td>G</td><td>double</td><td align="CENTER">1+(avg. len)*sqrt(|V|)</td><td>epsilon</td><td>neato only</td> </tr>
+ <tr><td><a name="a:dim" href="#d:dim">dim</a>
+</td><td>G</td><td>int</td><td align="CENTER">2</td><td>2</td><td>sfdp, fdp, neato only</td> </tr>
+ <tr><td><a name="a:dimen" href="#d:dimen">dimen</a>
+</td><td>G</td><td>int</td><td align="CENTER">2</td><td>2</td><td>sfdp, fdp, neato only</td> </tr>
+ <tr><td><a name="a:dir" href="#d:dir">dir</a>
+</td><td>E</td><td><a href="#k:dirType">dirType</a>
+</td><td align="CENTER">forward(directed)<br>none(undirected)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:diredgeconstraints" href="#d:diredgeconstraints">diredgeconstraints</a>
+</td><td>G</td><td>string<br><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:distortion" href="#d:distortion">distortion</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.0</td><td>-100.0</td><td></td> </tr>
+ <tr><td><a name="a:dpi" href="#d:dpi">dpi</a>
+</td><td>G</td><td>double</td><td align="CENTER">96.0<br>0.0</td><td></td><td>svg, bitmap output only</td> </tr>
+ <tr><td><a name="a:edgeURL" href="#d:edgeURL">edgeURL</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:edgehref" href="#d:edgehref">edgehref</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:edgetarget" href="#d:edgetarget">edgetarget</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:edgetooltip" href="#d:edgetooltip">edgetooltip</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, cmap only</td> </tr>
+ <tr><td><a name="a:epsilon" href="#d:epsilon">epsilon</a>
+</td><td>G</td><td>double</td><td align="CENTER">.0001 * # nodes(mode == KK)<br>.0001(mode == major)</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:esep" href="#d:esep">esep</a>
+</td><td>G</td><td><a href="#k:addDouble">addDouble</a>
+<br><a href="#k:addPoint">addPoint</a>
+</td><td align="CENTER">+3</td><td></td><td>not dot</td> </tr>
+ <tr><td><a name="a:fillcolor" href="#d:fillcolor">fillcolor</a>
+</td><td>NEC</td><td><a href="#k:color">color</a>
+<br><a href="#k:colorList">colorList</a>
+</td><td align="CENTER">lightgrey(nodes)<br>black(clusters)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:fixedsize" href="#d:fixedsize">fixedsize</a>
+</td><td>N</td><td><a href="#k:bool">bool</a>
+<br>string</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:fontcolor" href="#d:fontcolor">fontcolor</a>
+</td><td>ENGC</td><td><a href="#k:color">color</a>
+</td><td align="CENTER">black</td><td></td><td></td> </tr>
+ <tr><td><a name="a:fontname" href="#d:fontname">fontname</a>
+</td><td>ENGC</td><td>string</td><td align="CENTER">"Times-Roman"</td><td></td><td></td> </tr>
+ <tr><td><a name="a:fontnames" href="#d:fontnames">fontnames</a>
+</td><td>G</td><td>string</td><td align="CENTER">""</td><td></td><td>svg only</td> </tr>
+ <tr><td><a name="a:fontpath" href="#d:fontpath">fontpath</a>
+</td><td>G</td><td>string</td><td align="CENTER">system-dependent</td><td></td><td></td> </tr>
+ <tr><td><a name="a:fontsize" href="#d:fontsize">fontsize</a>
+</td><td>ENGC</td><td>double</td><td align="CENTER">14.0</td><td>1.0</td><td></td> </tr>
+ <tr><td><a name="a:forcelabels" href="#d:forcelabels">forcelabels</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td></td> </tr>
+ <tr><td><a name="a:gradientangle" href="#d:gradientangle">gradientangle</a>
+</td><td>NCG</td><td>int</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:group" href="#d:group">group</a>
+</td><td>N</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:headURL" href="#d:headURL">headURL</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:head_lp" href="#d:head_lp">head_lp</a>
+</td><td>E</td><td><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:headclip" href="#d:headclip">headclip</a>
+</td><td>E</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td></td> </tr>
+ <tr><td><a name="a:headhref" href="#d:headhref">headhref</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:headlabel" href="#d:headlabel">headlabel</a>
+</td><td>E</td><td><a href="#k:lblString">lblString</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:headport" href="#d:headport">headport</a>
+</td><td>E</td><td><a href="#k:portPos">portPos</a>
+</td><td align="CENTER">center</td><td></td><td></td> </tr>
+ <tr><td><a name="a:headtarget" href="#d:headtarget">headtarget</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:headtooltip" href="#d:headtooltip">headtooltip</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, cmap only</td> </tr>
+ <tr><td><a name="a:height" href="#d:height">height</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.5</td><td>0.02</td><td></td> </tr>
+ <tr><td><a name="a:href" href="#d:href">href</a>
+</td><td>GCNE</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, postscript, map only</td> </tr>
+ <tr><td><a name="a:id" href="#d:id">id</a>
+</td><td>GCNE</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, postscript, map only</td> </tr>
+ <tr><td><a name="a:image" href="#d:image">image</a>
+</td><td>N</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:imagepath" href="#d:imagepath">imagepath</a>
+</td><td>G</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:imagescale" href="#d:imagescale">imagescale</a>
+</td><td>N</td><td><a href="#k:bool">bool</a>
+<br>string</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:inputscale" href="#d:inputscale">inputscale</a>
+</td><td>G</td><td>double</td><td align="CENTER">&lt;none&gt;</td><td></td><td>fdp, neato only</td> </tr>
+ <tr><td><a name="a:label" href="#d:label">label</a>
+</td><td>ENGC</td><td><a href="#k:lblString">lblString</a>
+</td><td align="CENTER">"\N" (nodes)<br>"" (otherwise)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labelURL" href="#d:labelURL">labelURL</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:label_scheme" href="#d:label_scheme">label_scheme</a>
+</td><td>G</td><td>int</td><td align="CENTER">0</td><td>0</td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:labelangle" href="#d:labelangle">labelangle</a>
+</td><td>E</td><td>double</td><td align="CENTER">-25.0</td><td>-180.0</td><td></td> </tr>
+ <tr><td><a name="a:labeldistance" href="#d:labeldistance">labeldistance</a>
+</td><td>E</td><td>double</td><td align="CENTER">1.0</td><td>0.0</td><td></td> </tr>
+ <tr><td><a name="a:labelfloat" href="#d:labelfloat">labelfloat</a>
+</td><td>E</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labelfontcolor" href="#d:labelfontcolor">labelfontcolor</a>
+</td><td>E</td><td><a href="#k:color">color</a>
+</td><td align="CENTER">black</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labelfontname" href="#d:labelfontname">labelfontname</a>
+</td><td>E</td><td>string</td><td align="CENTER">"Times-Roman"</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labelfontsize" href="#d:labelfontsize">labelfontsize</a>
+</td><td>E</td><td>double</td><td align="CENTER">14.0</td><td>1.0</td><td></td> </tr>
+ <tr><td><a name="a:labelhref" href="#d:labelhref">labelhref</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:labeljust" href="#d:labeljust">labeljust</a>
+</td><td>GC</td><td>string</td><td align="CENTER">"c"</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labelloc" href="#d:labelloc">labelloc</a>
+</td><td>NGC</td><td>string</td><td align="CENTER">"t"(clusters)<br>"b"(root graphs)<br>"c"(nodes)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:labeltarget" href="#d:labeltarget">labeltarget</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:labeltooltip" href="#d:labeltooltip">labeltooltip</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, cmap only</td> </tr>
+ <tr><td><a name="a:landscape" href="#d:landscape">landscape</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layer" href="#d:layer">layer</a>
+</td><td>ENC</td><td><a href="#k:layerRange">layerRange</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layerlistsep" href="#d:layerlistsep">layerlistsep</a>
+</td><td>G</td><td>string</td><td align="CENTER">","</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layers" href="#d:layers">layers</a>
+</td><td>G</td><td><a href="#k:layerList">layerList</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layerselect" href="#d:layerselect">layerselect</a>
+</td><td>G</td><td><a href="#k:layerRange">layerRange</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layersep" href="#d:layersep">layersep</a>
+</td><td>G</td><td>string</td><td align="CENTER">" :\t"</td><td></td><td></td> </tr>
+ <tr><td><a name="a:layout" href="#d:layout">layout</a>
+</td><td>G</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:len" href="#d:len">len</a>
+</td><td>E</td><td>double</td><td align="CENTER">1.0(neato)<br>0.3(fdp)</td><td></td><td>fdp, neato only</td> </tr>
+ <tr><td><a name="a:levels" href="#d:levels">levels</a>
+</td><td>G</td><td>int</td><td align="CENTER">MAXINT</td><td>0.0</td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:levelsgap" href="#d:levelsgap">levelsgap</a>
+</td><td>G</td><td>double</td><td align="CENTER">0.0</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:lhead" href="#d:lhead">lhead</a>
+</td><td>E</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:lheight" href="#d:lheight">lheight</a>
+</td><td>GC</td><td>double</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:lp" href="#d:lp">lp</a>
+</td><td>EGC</td><td><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:ltail" href="#d:ltail">ltail</a>
+</td><td>E</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:lwidth" href="#d:lwidth">lwidth</a>
+</td><td>GC</td><td>double</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:margin" href="#d:margin">margin</a>
+</td><td>NCG</td><td>double<br><a href="#k:point">point</a>
+</td><td align="CENTER">&lt;device-dependent&gt;</td><td></td><td></td> </tr>
+ <tr><td><a name="a:maxiter" href="#d:maxiter">maxiter</a>
+</td><td>G</td><td>int</td><td align="CENTER">100 * # nodes(mode == KK)<br>200(mode == major)<br>600(fdp)</td><td></td><td>fdp, neato only</td> </tr>
+ <tr><td><a name="a:mclimit" href="#d:mclimit">mclimit</a>
+</td><td>G</td><td>double</td><td align="CENTER">1.0</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:mindist" href="#d:mindist">mindist</a>
+</td><td>G</td><td>double</td><td align="CENTER">1.0</td><td>0.0</td><td>circo only</td> </tr>
+ <tr><td><a name="a:minlen" href="#d:minlen">minlen</a>
+</td><td>E</td><td>int</td><td align="CENTER">1</td><td>0</td><td>dot only</td> </tr>
+ <tr><td><a name="a:mode" href="#d:mode">mode</a>
+</td><td>G</td><td>string</td><td align="CENTER">major</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:model" href="#d:model">model</a>
+</td><td>G</td><td>string</td><td align="CENTER">shortpath</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:mosek" href="#d:mosek">mosek</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:nodesep" href="#d:nodesep">nodesep</a>
+</td><td>G</td><td>double</td><td align="CENTER">0.25</td><td>0.02</td><td></td> </tr>
+ <tr><td><a name="a:nojustify" href="#d:nojustify">nojustify</a>
+</td><td>GCNE</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:normalize" href="#d:normalize">normalize</a>
+</td><td>G</td><td>double<br><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>not dot</td> </tr>
+ <tr><td><a name="a:notranslate" href="#d:notranslate">notranslate</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>neato only</td> </tr>
+ <tr><td><a name="a:nslimit" href="#d:nslimit">nslimit</a>
+<br><a name="a:nslimit1" href="#d:nslimit1">nslimit1</a>
+</td><td>G</td><td>double</td><td align="CENTER"></td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:ordering" href="#d:ordering">ordering</a>
+</td><td>GN</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:orientation" href="#d:orientation">orientation</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.0</td><td>360.0</td><td></td> </tr>
+ <tr><td><a name="aa:orientation" href="#dd:orientation">orientation</a>
+</td><td>G</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:outputorder" href="#d:outputorder">outputorder</a>
+</td><td>G</td><td><a href="#k:outputMode">outputMode</a>
+</td><td align="CENTER">breadthfirst</td><td></td><td></td> </tr>
+ <tr><td><a name="a:overlap" href="#d:overlap">overlap</a>
+</td><td>G</td><td>string<br><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td>not dot</td> </tr>
+ <tr><td><a name="a:overlap_scaling" href="#d:overlap_scaling">overlap_scaling</a>
+</td><td>G</td><td>double</td><td align="CENTER">-4</td><td>-1.0e10</td><td>prism only</td> </tr>
+ <tr><td><a name="a:overlap_shrink" href="#d:overlap_shrink">overlap_shrink</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td>prism only</td> </tr>
+ <tr><td><a name="a:pack" href="#d:pack">pack</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+<br>int</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:packmode" href="#d:packmode">packmode</a>
+</td><td>G</td><td><a href="#k:packMode">packMode</a>
+</td><td align="CENTER">node</td><td></td><td></td> </tr>
+ <tr><td><a name="a:pad" href="#d:pad">pad</a>
+</td><td>G</td><td>double<br><a href="#k:point">point</a>
+</td><td align="CENTER">0.0555 (4 points)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:page" href="#d:page">page</a>
+</td><td>G</td><td>double<br><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td></td> </tr>
+ <tr><td><a name="a:pagedir" href="#d:pagedir">pagedir</a>
+</td><td>G</td><td><a href="#k:pagedir">pagedir</a>
+</td><td align="CENTER">BL</td><td></td><td></td> </tr>
+ <tr><td><a name="a:pencolor" href="#d:pencolor">pencolor</a>
+</td><td>C</td><td><a href="#k:color">color</a>
+</td><td align="CENTER">black</td><td></td><td></td> </tr>
+ <tr><td><a name="a:penwidth" href="#d:penwidth">penwidth</a>
+</td><td>CNE</td><td>double</td><td align="CENTER">1.0</td><td>0.0</td><td></td> </tr>
+ <tr><td><a name="a:peripheries" href="#d:peripheries">peripheries</a>
+</td><td>NC</td><td>int</td><td align="CENTER">shape default(nodes)<br>1(clusters)</td><td>0</td><td></td> </tr>
+ <tr><td><a name="a:pin" href="#d:pin">pin</a>
+</td><td>N</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td>fdp, neato only</td> </tr>
+ <tr><td><a name="a:pos" href="#d:pos">pos</a>
+</td><td>EN</td><td><a href="#k:point">point</a>
+<br><a href="#k:splineType">splineType</a>
+</td><td align="CENTER"></td><td></td><td></td> </tr>
+ <tr><td><a name="a:quadtree" href="#d:quadtree">quadtree</a>
+</td><td>G</td><td><a href="#k:quadType">quadType</a>
+<br><a href="#k:bool">bool</a>
+</td><td align="CENTER">normal</td><td></td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:quantum" href="#d:quantum">quantum</a>
+</td><td>G</td><td>double</td><td align="CENTER">0.0</td><td>0.0</td><td></td> </tr>
+ <tr><td><a name="a:rank" href="#d:rank">rank</a>
+</td><td>S</td><td><a href="#k:rankType">rankType</a>
+</td><td align="CENTER"></td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:rankdir" href="#d:rankdir">rankdir</a>
+</td><td>G</td><td><a href="#k:rankdir">rankdir</a>
+</td><td align="CENTER">TB</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:ranksep" href="#d:ranksep">ranksep</a>
+</td><td>G</td><td>double<br><a href="#k:doubleList">doubleList</a>
+</td><td align="CENTER">0.5(dot)<br>1.0(twopi)</td><td>0.02</td><td>twopi, dot only</td> </tr>
+ <tr><td><a name="a:ratio" href="#d:ratio">ratio</a>
+</td><td>G</td><td>double<br>string</td><td align="CENTER"></td><td></td><td></td> </tr>
+ <tr><td><a name="a:rects" href="#d:rects">rects</a>
+</td><td>N</td><td><a href="#k:rect">rect</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:regular" href="#d:regular">regular</a>
+</td><td>N</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">false</td><td></td><td></td> </tr>
+ <tr><td><a name="a:remincross" href="#d:remincross">remincross</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:repulsiveforce" href="#d:repulsiveforce">repulsiveforce</a>
+</td><td>G</td><td>double</td><td align="CENTER">1.0</td><td>0.0</td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:resolution" href="#d:resolution">resolution</a>
+</td><td>G</td><td>double</td><td align="CENTER">96.0<br>0.0</td><td></td><td>svg, bitmap output only</td> </tr>
+ <tr><td><a name="a:root" href="#d:root">root</a>
+</td><td>GN</td><td>string<br><a href="#k:bool">bool</a>
+</td><td align="CENTER">&lt;none&gt;(graphs)<br>false(nodes)</td><td></td><td>circo, twopi only</td> </tr>
+ <tr><td><a name="a:rotate" href="#d:rotate">rotate</a>
+</td><td>G</td><td>int</td><td align="CENTER">0</td><td></td><td></td> </tr>
+ <tr><td><a name="a:rotation" href="#d:rotation">rotation</a>
+</td><td>G</td><td>double</td><td align="CENTER">0</td><td></td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:samehead" href="#d:samehead">samehead</a>
+</td><td>E</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:sametail" href="#d:sametail">sametail</a>
+</td><td>E</td><td>string</td><td align="CENTER">""</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:samplepoints" href="#d:samplepoints">samplepoints</a>
+</td><td>N</td><td>int</td><td align="CENTER">8(output)<br>20(overlap and image maps)</td><td></td><td></td> </tr>
+ <tr><td><a name="a:scale" href="#d:scale">scale</a>
+</td><td>G</td><td>double<br><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td>not dot</td> </tr>
+ <tr><td><a name="a:searchsize" href="#d:searchsize">searchsize</a>
+</td><td>G</td><td>int</td><td align="CENTER">30</td><td></td><td>dot only</td> </tr>
+ <tr><td><a name="a:sep" href="#d:sep">sep</a>
+</td><td>G</td><td><a href="#k:addDouble">addDouble</a>
+<br><a href="#k:addPoint">addPoint</a>
+</td><td align="CENTER">+4</td><td></td><td>not dot</td> </tr>
+ <tr><td><a name="a:shape" href="#d:shape">shape</a>
+</td><td>N</td><td><a href="#k:shape">shape</a>
+</td><td align="CENTER">ellipse</td><td></td><td></td> </tr>
+ <tr><td><a name="a:shapefile" href="#d:shapefile">shapefile</a>
+</td><td>N</td><td>string</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:showboxes" href="#d:showboxes">showboxes</a>
+</td><td>ENG</td><td>int</td><td align="CENTER">0</td><td>0</td><td>dot only</td> </tr>
+ <tr><td><a name="a:sides" href="#d:sides">sides</a>
+</td><td>N</td><td>int</td><td align="CENTER">4</td><td>0</td><td></td> </tr>
+ <tr><td><a name="a:size" href="#d:size">size</a>
+</td><td>G</td><td>double<br><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td></td> </tr>
+ <tr><td><a name="a:skew" href="#d:skew">skew</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.0</td><td>-100.0</td><td></td> </tr>
+ <tr><td><a name="a:smoothing" href="#d:smoothing">smoothing</a>
+</td><td>G</td><td><a href="#k:smoothType">smoothType</a>
+</td><td align="CENTER">"none"</td><td></td><td>sfdp only</td> </tr>
+ <tr><td><a name="a:sortv" href="#d:sortv">sortv</a>
+</td><td>GCN</td><td>int</td><td align="CENTER">0</td><td>0</td><td></td> </tr>
+ <tr><td><a name="a:splines" href="#d:splines">splines</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+<br>string</td><td align="CENTER"></td><td></td><td></td> </tr>
+ <tr><td><a name="a:start" href="#d:start">start</a>
+</td><td>G</td><td><a href="#k:startType">startType</a>
+</td><td align="CENTER">""</td><td></td><td>fdp, neato only</td> </tr>
+ <tr><td><a name="a:style" href="#d:style">style</a>
+</td><td>ENCG</td><td><a href="#k:style">style</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:stylesheet" href="#d:stylesheet">stylesheet</a>
+</td><td>G</td><td>string</td><td align="CENTER">""</td><td></td><td>svg only</td> </tr>
+ <tr><td><a name="a:tailURL" href="#d:tailURL">tailURL</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:tail_lp" href="#d:tail_lp">tail_lp</a>
+</td><td>E</td><td><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:tailclip" href="#d:tailclip">tailclip</a>
+</td><td>E</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER">true</td><td></td><td></td> </tr>
+ <tr><td><a name="a:tailhref" href="#d:tailhref">tailhref</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:taillabel" href="#d:taillabel">taillabel</a>
+</td><td>E</td><td><a href="#k:lblString">lblString</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:tailport" href="#d:tailport">tailport</a>
+</td><td>E</td><td><a href="#k:portPos">portPos</a>
+</td><td align="CENTER">center</td><td></td><td></td> </tr>
+ <tr><td><a name="a:tailtarget" href="#d:tailtarget">tailtarget</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:tailtooltip" href="#d:tailtooltip">tailtooltip</a>
+</td><td>E</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, cmap only</td> </tr>
+ <tr><td><a name="a:target" href="#d:target">target</a>
+</td><td>ENGC</td><td><a href="#k:escString">escString</a>
+<br>string</td><td align="CENTER">&lt;none&gt;</td><td></td><td>svg, map only</td> </tr>
+ <tr><td><a name="a:tooltip" href="#d:tooltip">tooltip</a>
+</td><td>NEC</td><td><a href="#k:escString">escString</a>
+</td><td align="CENTER">""</td><td></td><td>svg, cmap only</td> </tr>
+ <tr><td><a name="a:truecolor" href="#d:truecolor">truecolor</a>
+</td><td>G</td><td><a href="#k:bool">bool</a>
+</td><td align="CENTER"></td><td></td><td>bitmap output only</td> </tr>
+ <tr><td><a name="a:vertices" href="#d:vertices">vertices</a>
+</td><td>N</td><td><a href="#k:pointList">pointList</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:viewport" href="#d:viewport">viewport</a>
+</td><td>G</td><td><a href="#k:viewPort">viewPort</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:voro_margin" href="#d:voro_margin">voro_margin</a>
+</td><td>G</td><td>double</td><td align="CENTER">0.05</td><td>0.0</td><td>not dot</td> </tr>
+ <tr><td><a name="a:weight" href="#d:weight">weight</a>
+</td><td>E</td><td>int<br>double</td><td align="CENTER">1</td><td>0(dot,twopi)<br>1(neato,fdp)</td><td></td> </tr>
+ <tr><td><a name="a:width" href="#d:width">width</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.75</td><td>0.01</td><td></td> </tr>
+ <tr><td><a name="a:xdotversion" href="#d:xdotversion">xdotversion</a>
+</td><td>G</td><td>string</td><td align="CENTER"></td><td></td><td>xdot only</td> </tr>
+ <tr><td><a name="a:xlabel" href="#d:xlabel">xlabel</a>
+</td><td>EN</td><td><a href="#k:lblString">lblString</a>
+</td><td align="CENTER">""</td><td></td><td></td> </tr>
+ <tr><td><a name="a:xlp" href="#d:xlp">xlp</a>
+</td><td>NE</td><td><a href="#k:point">point</a>
+</td><td align="CENTER"></td><td></td><td>write only</td> </tr>
+ <tr><td><a name="a:z" href="#d:z">z</a>
+</td><td>N</td><td>double</td><td align="CENTER">0.0</td><td>-MAXFLOAT<br>-1000</td><td></td> </tr>
+</tbody></table>

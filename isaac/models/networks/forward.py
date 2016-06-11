@@ -119,6 +119,7 @@ class Network(object):
         # 1. Compute the delta of error with respect to the
         #    the output of the final layer
         delta = self.cost_derivative(a[-1], y)
+        # delta = self.cost_derivative(a[-1], y) * self.activation_derivative(z[-1])
         # HINT delta.shape == (len(X), self.k)
         # compute gradient in curent layer using delta
         gradient_weights[-1] = np.dot(delta.T, a[-1-1])

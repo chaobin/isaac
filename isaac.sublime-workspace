@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"sorte",
+				"sorted_color_maps	function"
+			],
+			[
+				"sorted",
+				"sorted_colors	statement"
+			],
+			[
+				"class",
+				"classmethod	class"
+			],
+			[
+				"iter",
+				"iterations	statement"
+			],
+			[
+				"arra",
+				"array_equal	function"
+			],
+			[
 				"acti",
 				"activations"
 			],
@@ -268,10 +288,6 @@
 				"date_created"
 			],
 			[
-				"class",
-				"classmethod"
-			],
-			[
 				"make",
 				"make_tracking_id"
 			],
@@ -332,10 +348,29 @@
 	"buffers":
 	[
 		{
-			"file": "isaac/models/kmeans.py",
+			"contents": "",
+			"file": "isaac/models/clustering/kmodes.py",
+			"file_size": 0,
+			"file_write_time": 131059098710000000,
 			"settings":
 			{
-				"buffer_size": 1464,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "isaac/models/regressions.py",
+			"settings":
+			{
+				"buffer_size": 2263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "isaac/optimizers/gradient.py",
+			"settings":
+			{
+				"buffer_size": 962,
 				"line_ending": "Unix"
 			}
 		}
@@ -438,23 +473,31 @@
 	"expanded_folders":
 	[
 		"/Users/cbt/Projects/isaac",
-		"/Users/cbt/Projects/isaac/examples",
 		"/Users/cbt/Projects/isaac/isaac",
-		"/Users/cbt/Projects/isaac/isaac/models"
+		"/Users/cbt/Projects/isaac/isaac/models",
+		"/Users/cbt/Projects/isaac/isaac/optimizers",
+		"/Users/cbt/Projects/isaac/isaac/plots"
 	],
 	"file_history":
 	[
-		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
+		"/Users/cbt/Projects/isaac/isaac.sublime-project",
+		"/Users/cbt/Documents/work/interview/interview_feedback_zhenyi_yao.md",
+		"/Users/cbt/Projects/isaac/isaac/models/clustering/kmeans.py",
+		"/Users/cbt/Projects/isaac/isaac/models/kmeans.py",
 		"/Users/cbt/Projects/isaac/isaac/models/networks/forward.py",
+		"/Users/cbt/Projects/isaac/isaac/models/networks/activations.py",
+		"/Users/cbt/Projects/isaac/isaac/plots/basic.py",
+		"/Users/cbt/Projects/isaac/isaac/models/regressions.py",
+		"/Users/cbt/Projects/isaac/README.md",
+		"/Users/cbt/Projects/isaac/requirements.txt",
+		"/Users/cbt/Projects/isaac/LICENSE",
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings",
 		"/Users/cbt/Projects/isaac/isaac/optimizers/gradient.py",
 		"/Users/cbt/Projects/isaac/isaac/optimizers/backpropagation.py",
 		"/Users/cbt/Projects/isaac/isaac/models/knn.py",
-		"/Users/cbt/Projects/isaac/isaac/models/regressions.py",
-		"/Users/cbt/Projects/isaac/isaac/models/networks/activations.py",
 		"/Users/cbt/Projects/isaac/isaac/models/linear.py",
 		"/Users/cbt/Projects/isaac/isaac/stats/__init__.py",
 		"/Users/cbt/Projects/isaac/isaac/pipeline/preprocess.py",
-		"/Users/cbt/Projects/isaac/isaac/plots/basic.py",
 		"/Users/cbt/Projects/isaac/isaac/pipeline/normalizer.py",
 		"/Users/cbt/Projects/isaac/isaac/utils/debug.py",
 		"/Users/cbt/Projects/isaac/.development/mnist_net.history",
@@ -464,8 +507,6 @@
 		"/Users/cbt/Projects/isaac/examples/digits.py",
 		"/Users/cbt/Projects/isaac/isaac/models/__init__.py",
 		"/Users/cbt/Projects/isaac/setup.py",
-		"/Users/cbt/Projects/isaac/requirements.txt",
-		"/Users/cbt/Projects/isaac/LICENSE",
 		"/Users/cbt/Projects/isaac/isaac/models/networks/__init__.py",
 		"/Users/cbt/Projects/isaac/isaac/models/networks.py",
 		"/Users/cbt/Projects/isaac/isaac/pipeline/__init__.py",
@@ -566,12 +607,7 @@
 		"/Users/cbt/Projects/planetchx3/planetchx/apps/menu/models.py",
 		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/models.py",
 		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
-		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
-		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/cbt/Projects/planetchx3/deploy/uwsgi_planetchx.ini",
-		"/Users/cbt/Projects/planetchx3/planetchx/settings/__init__.py",
-		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/migrations/__init__.py",
-		"/Users/cbt/Projects/planetchx3/planetchx/apps/customer/views.py"
+		"/Users/cbt/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings"
 	],
 	"find":
 	{
@@ -637,19 +673,47 @@
 			[
 				{
 					"buffer": 0,
-					"file": "isaac/models/kmeans.py",
+					"file": "isaac/models/clustering/kmodes.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1464,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1365,
-								1365
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "isaac/models/regressions.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								738
 							]
 						],
 						"settings":
@@ -659,10 +723,40 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 609.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "isaac/optimizers/gradient.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
